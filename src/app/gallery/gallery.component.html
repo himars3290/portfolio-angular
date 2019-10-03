@@ -1,7 +1,7 @@
 <div *ngIf="projects" [@slideIn] = 'state'>
   <div class="thumb-container">
     <div *ngFor="let project of projects" class="thumbs">
-      <a routerLink="/project/ {{project.id}}">
+      <a routerLink="/project/{{project.id}}">
         <div class="project-info">
           <p> {{project.name}}</p>
         </div>
