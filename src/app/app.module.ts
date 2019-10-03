@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DetailsComponent } from './details/details.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import {ApiService} from './api.service';
+import {HttpModule} from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -14,9 +16,10 @@ import { GalleryComponent } from './gallery/gallery.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpModule
   ],
-  providers: [],
+  providers: [ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
