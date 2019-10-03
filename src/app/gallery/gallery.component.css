@@ -71,8 +71,22 @@
     transform: scale(1.15); }
   100% {
     transform: scale(1.05); } }
-img#gallery-image {
-  height: 230px;
-  object-fit: cover; }
+/* max-width 640px, mobile-only styles */
+@media only screen and (max-width: 40em) {
+  .thumbs {
+    width: 50%; } }
+/* min-width 1025px, large screens */
+@media only screen and (min-width: 64.063em) {
+  .thumbs {
+    max-width: 300px; } }
+@media only screen and (max-width: 64.063em) {
+  .feature h3, .feature p {
+    text-align: center; }
+
+  .feature p {
+    margin-bottom: 30px; }
+
+  .feature img {
+    margin-bottom: 15px; } }
 
 /*# sourceMappingURL=gallery.component.css.map */
