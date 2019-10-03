@@ -7,6 +7,7 @@ import { DetailsComponent } from './details/details.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import {ApiService} from './api.service';
 import {HttpModule} from '@angular/http';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {HttpModule} from '@angular/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpModule
+    HttpModule,
+    BrowserAnimationsModule
   ],
   providers: [ApiService],
   bootstrap: [AppComponent]

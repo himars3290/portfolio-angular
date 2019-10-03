@@ -78,7 +78,7 @@
 /* min-width 1025px, large screens */
 @media only screen and (min-width: 64.063em) {
   .thumbs {
-    max-width: 300px; } }
+    max-width: 50%; } }
 @media only screen and (max-width: 64.063em) {
   .feature h3, .feature p {
     text-align: center; }
@@ -88,5 +88,8 @@
 
   .feature img {
     margin-bottom: 15px; } }
+img#gallery-image {
+  height: 230px;
+  object-fit: cover; }
 
 /*# sourceMappingURL=gallery.component.css.map */

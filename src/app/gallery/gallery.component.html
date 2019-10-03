@@ -1,4 +1,4 @@
-<div *ngIf="projects">
+<div *ngIf="projects" [@slideIn] = 'state'>
   <div class="thumb-container">
     <div *ngFor="let project of projects" class="thumbs">
       <a routerLink="/project/ {{project.id}}">

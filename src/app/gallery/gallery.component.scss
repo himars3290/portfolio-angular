@@ -89,7 +89,7 @@
 /* min-width 1025px, large screens */
 @media only screen and (min-width: 64.063em) {
   .thumbs {
-    max-width:300px;
+    max-width:50%;
   }
 }
 
@@ -108,8 +108,8 @@
   }
 
 }
-//img#gallery-image {
-//  width: 230px;
-//  height: 230px;
-//  object-fit: cover;
-//}
+img#gallery-image {
+  //width: 230px;
+  height: 230px;
+  object-fit: cover;
+}
