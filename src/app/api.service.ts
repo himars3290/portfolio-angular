@@ -12,14 +12,14 @@ export class ApiService {
   }
 
   getProjects() {
-    return this._http.get('/public/projects.json')
+    return this._http.get('public/projects.json')
       .pipe(
         map(res => res.json())
       );
   }
 
   getProject(id) {
-    return this._http.get('/public/projects.json')
+    return this._http.get('public/projects.json')
       .pipe(
         map(res => {
           return res.json()[id - 1];
