@@ -1,0 +1,36 @@
+<div *ngIf="projects">
+  <div class="thumb-container">
+    <div *ngFor="let project of projects" class="thumbs">
+      <a routerLink="/project/ {{project.id}}">
+        <div class="project-info">
+          <p> {{project.name}}</p>
+        </div>
+        <img id="gallery-image" src="{{project.image}}" alt="">
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="row pad feature">
+  <div class="columns small-12 large-1">
+    <img src="assets/icon-frontend.png" alt="">
+  </div>
+  <div class="columns small-12 large-5">
+    <h3>Frontend Development</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium commodi doloremque, ea odio officia quis
+      sit suscipit! Accusamus error exercitationem, ipsam modi, mollitia, nihil perferendis placeat reiciendis repellat
+      sequi velit.</p>
+
+  </div>
+
+  <div class="columns small-12 large-1 offset-1">
+    <img src="assets/icon-backend.png" alt="">
+  </div>
+  <div class="columns small-12 large-5">
+    <h3>Backend Development</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium commodi doloremque, ea odio officia quis
+      sit suscipit! Accusamus error exercitationem, ipsam modi, mollitia, nihil perferendis placeat reiciendis repellat
+      sequi velit.</p>
+
+  </div>
+</div>
